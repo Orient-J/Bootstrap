@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Form</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>Bootstrap Form</h1>
+
+            <form action="" method="post" enctype="multipart/form-data" >
+
+                <div class="row">
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control form-control-md rounded-0 firstname" placeholder="Enter First Name" />
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control form-control-md rounded-0 lastname" placeholder="Enter Last Name" />
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email" />
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="form-control form-control-lg rounded-0" placeholder="Enter Your Password" />
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="country">Country</label>
+                        <select name="country" id="country" class="form-select form-select-sm" multiple>
+                            <option selected disabled>Choose Your Country</option>
+                            <option value="mm">Myanmar</option>
+                            <option value="thai">Thailand</option>
+                            <option value="jp">Japan</option>
+                            <option value="ch">China</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="brand">Brands</label>
+                        <select name="brand" id="brand" class="form-select form-select-lg rounded-pill">
+                            <option selected disabled>Choose Your Brand</option>
+                            <option value="sm">Samsung</option>
+                            <option value="opl">One Plus</option>
+                            <option value="op">Oppo</option>
+                            <option vlaue="ip">iPhone</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label>Choose Gender : </label>
+                        <span class="form-check">
+                            <input type="radio" name="gender" id="genderm" class="form-check-input" value="male" /> <label for="genderm"> Male</label>
+                        </span>
+                        <div class="form-check">
+                            <input type="radio" name="gender" id="genderf" class="form-check-input" value="female" /> <label for="genderf">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label>Colors :</label>
+
+                        <div class="form-check">
+                            <input type="checkbox" name="color" id="red" class="form-check-input" value="red" /> <label for="red">Red</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="color" id="blue" class="form-check-input" value="blue" /> <label for="blue">Blue</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" name="color" id="green" class="form-check-input" value="green" /> <label for="green">Green</label>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="date">Date of birth : </label>
+                        <input type="date" name="date" id="date" class="form-control form-control-lg rounded-0" value=""/>
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="file">File : </label>
+                        <input type="file" name="file" id="file" class="form-control form-control-md rounded-0" />
+                    </div>
+
+                    <div class="col-md-6 form-group mb-3">
+                        <label for="range">Range : </label>
+                        <input type="range" name="range" id="range" class="form-range" min="0" max="100" step="20" value="0" />
+                    </div>
+
+                    <div class="col-md-12 form-group mb-3">
+                        <label for="bio">Summary</label>
+                        <textarea name="bio" id="bio" class="form-control form-control-md rounded-0"></textarea>
+
+                    </div>
+
+                    <div class="col-md-12 form-group mb-3">
+
+                        <div class="form-check form-switch">
+                            <input type="checkbox" name="agree" id="agree" class="form-check-input" value="agree" />
+                            <label for="agree">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloribus dolorum necessitatibus. Deserunt dignissimos expedita officia reprehenderit totam voluptatum! Eligendi?
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-danger btn-sm rounded-0 me-3">Cancel</button>
+                            <button type="submit" class="btn btn-outline-success btn-lg rounded-pill">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html>
